@@ -1,13 +1,50 @@
+/* #backGroundForm:#F8F9F9 */
+:root {
+  --main-bg-color: #bfebd6;
+  --main-bg-form: #f8f9f9;
+}
+
+html,
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  height: 100%;
+}
+
+body {
+  /* display: flex; */
+  align-items: center;
+  padding-top: 60px;
+  padding-bottom: 40px;
+  padding-left: 10px;
+  padding-right: 10px;
+  /*  background-color: var(--main-bg-color); */
+  background-image: url("./images/bg-planeta-ficticio_2560x1600_xtrafondos.com.jpg");
+}
+
+body {
+  /* margin: 0; */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+h1,
+h2,
+h3 {
+  color: #ffd52d;
+}
+
+nav {
+  background: rgb(16, 16, 17);
+  background: radial-gradient(
+    circle,
+    rgba(16, 16, 17, 1) 53%,
+    rgba(78, 22, 32, 1) 100%
+  );
 }

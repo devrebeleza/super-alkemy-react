@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  color: "#48d1cc";
 }
 
 .App-logo {
@@ -21,7 +22,8 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  /* color: white; */
+  color: "#48d1cc";
 }
 
 .App-link {
@@ -35,4 +37,103 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/**************/
+.div-search {
+  position: relative;
+  padding: 100px 0 0;
+  width: 40%;
+  margin: 0 auto;
+}
+
+.input-search {
+  font-family: inherit;
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid #9b9b9b;
+  outline: 0;
+  font-size: 1.2rem;
+  color: #2d4034;
+
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+}
+.input-search:placeholder {
+  color: transparent;
+}
+
+.input-search:placeholder-shown ~ .LabelSearch {
+  font-size: 1rem;
+  cursor: text;
+  top: 20px;
+}
+.input-search:required,
+:invalid {
+  box-shadow: none;
+}
+
+.input-search:focus ~ .LabelSearch {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: #66b3ff;
+
+  padding-bottom: 6px;
+
+  border-width: 3px;
+  border-image: linear-gradient(to right, #083fa6, #27ebf2);
+  border-image-slice: 1;
+}
+
+.LabelSearch {
+  position: absolute;
+  top: 10;
+  display: block;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: #9b9b9b;
+}
+
+/* search bar*/
+.box {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.input {
+  padding: 10px;
+  width: 70px;
+  height: 70px;
+  background: none;
+  border: 4px solid #ffd52d;
+  border-radius: 50px;
+  box-sizing: border-box;
+  font-family: Comic Sans MS;
+  font-size: 16px;
+  color: #ffd52d;
+  outline: none;
+  transition: 0.5s;
+}
+.box:hover input {
+  width: 350px;
+  background: #272133;
+  border-radius: 10px;
+}
+i {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  color: #ffd52d;
+  transition: 0.2s;
+}
+.box:hover i {
+  opacity: 0;
+  z-index: -1;
 }
