@@ -63,17 +63,17 @@ export const HeroesContainer = ({
       <h1>Page Heroes</h1>
       <div className="container">
         <div className="div-search ">
-          <div class="box">
+          <div className="box">
             <form name="search">
               <input
                 type="text"
-                class="input"
+                className="input"
                 name="txt"
                 onInput={handleSearchByName}
-                onmouseout="document.search.txt.value = ''"
+                onMouseOut="document.search.txt.value = ''"
               />
             </form>
-            <i class="i-search fas fa-search"></i>
+            <i className="i-search fas fa-search"></i>
           </div>
         </div>
       </div>
