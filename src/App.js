@@ -11,6 +11,7 @@ import {
   setUnsetElementLocalStorage,
 } from "./contexts/LocalStorageFunctions";
 import { ErrorPage } from "./containers/error/ErrorPage";
+import { Footer } from "./components/generals/Footer";
 
 function App() {
   const [token, setToken] = useState(!!localStorage.getItem("accesToken"));
@@ -48,47 +49,50 @@ function App() {
   };
 
   return (
-    <BrowserRouter>
-      {!token ? "" : <NavBar LogoutForm={LogoutForm} />}
-      <div className="App">
-        {!error ? (
-          ""
-        ) : (
-          <div className="alert alert-danger" role="alert">
-            <h5>{error}</h5>
-          </div>
-        )}
-        <Switch>
-          <Route exact path="/">
-            {!token ? (
-              <Redirect to="/login" />
-            ) : (
-              <TeamContainer
-                setFavorites={setFavorites}
-                listHeroes={listHeroes}
-                setListHeroes={setListHeroes}
-              />
-            )}
-          </Route>
-          <Route exact path="/login">
-            {token ? <Redirect to="/" /> : <Login LoginForm={LoginForm} />}
-          </Route>
-          <Route exact path="/heroes">
-            {!token ? (
-              <Redirect to="/login" />
-            ) : (
-              <HeroesContainer
-                baseAPI={baseAPI}
-                setFavorites={setFavorites}
-                listHeroes={listHeroes}
-                setError={setError}
-              />
-            )}
-          </Route>
-          <Route component={ErrorPage} />
-        </Switch>
-      </div>
-    </BrowserRouter>
+    <div>
+      <BrowserRouter>
+        {!token ? "" : <NavBar LogoutForm={LogoutForm} />}
+        <div className="App">
+          {!error ? (
+            ""
+          ) : (
+            <div className="alert alert-danger" role="alert">
+              <h5>{error}</h5>
+            </div>
+          )}
+          <Switch>
+            <Route exact path="/">
+              {!token ? (
+                <Redirect to="/login" />
+              ) : (
+                <TeamContainer
+                  setFavorites={setFavorites}
+                  listHeroes={listHeroes}
+                  setListHeroes={setListHeroes}
+                />
+              )}
+            </Route>
+            <Route exact path="/login">
+              {token ? <Redirect to="/" /> : <Login LoginForm={LoginForm} />}
+            </Route>
+            <Route exact path="/heroes">
+              {!token ? (
+                <Redirect to="/login" />
+              ) : (
+                <HeroesContainer
+                  baseAPI={baseAPI}
+                  setFavorites={setFavorites}
+                  listHeroes={listHeroes}
+                  setError={setError}
+                />
+              )}
+            </Route>
+            <Route component={ErrorPage} />
+          </Switch>
+        </div>
+        {!token ? "" : <Footer />}
+      </BrowserRouter>
+    </div>
   );
 }
 

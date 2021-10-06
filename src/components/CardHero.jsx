@@ -93,7 +93,6 @@ export const CardHero = (props) => {
                   </ol>
                 </div>
               </div>
-              {/* powerstats */}
               <div className="col">
                 <div className="modal-body">
                   <h5>PowerStats</h5>

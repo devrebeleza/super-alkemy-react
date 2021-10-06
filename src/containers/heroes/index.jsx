@@ -73,7 +73,7 @@ export const HeroesContainer = ({
                 onmouseout="document.search.txt.value = ''"
               />
             </form>
-            <i class="fas fa-search"></i>
+            <i class="i-search fas fa-search"></i>
           </div>
         </div>
       </div>
