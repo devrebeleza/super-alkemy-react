@@ -54,6 +54,12 @@ _Desplegado en Vercel_
 
 > _Con errores de CORS a resolver_
 
+## Próximos pasos :open_hands:
+
+Realizar validación de formulario con la librería [Formik](https://formik.org/)
+
+Crear test unitarios para validar los elementos de la app, utilizando las librerías [Jest](https://jestjs.io/) y [React Testing Library](https://testing-library.com/)
+
 ## Licencia 📄
 
 Uso libre y gratuito
