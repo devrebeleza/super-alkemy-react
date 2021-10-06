@@ -36,5 +36,16 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "https://superheroapi.com"
+  "proxy": "https://superheroapi.com",
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "access-control-allow-origin",
+          "value": "*"
+        }
+      ]
+    }
+  ]
 }
