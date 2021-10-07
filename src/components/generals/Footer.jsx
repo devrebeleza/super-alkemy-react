@@ -14,6 +14,7 @@ export const Footer = () => {
                     className="text-white"
                     href="https://github.com/devrebeleza"
                     target="_blank"
+                    rel="noopener noreferrer"
                   >
                     devReBeleza
                   </a>
@@ -25,6 +26,7 @@ export const Footer = () => {
                 <a
                   href="https://www.linkedin.com/in/renzogarcia/"
                   target="_blank"
+                  rel="noopener noreferrer"
                   className="btn btn-outline-light btn-floating m-1"
                   className="text-white"
                   role="button"
@@ -34,6 +36,7 @@ export const Footer = () => {
                 <a
                   href="https://www.linkedin.com/in/renzogarcia/"
                   target="_blank"
+                  rel="noopener noreferrer"
                   className="btn btn-outline-light btn-floating m-1"
                   className="text-white"
                   role="button"
