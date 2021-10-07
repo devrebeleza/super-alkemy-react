@@ -70,7 +70,7 @@ export const HeroesContainer = ({
                 className="input"
                 name="txt"
                 onInput={handleSearchByName}
-                onMouseOut="document.search.txt.value = ''"
+                /* onMouseOut="document.search.txt.value = ''" */
               />
             </form>
             <i className="i-search fas fa-search"></i>
