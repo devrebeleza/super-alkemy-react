@@ -15,7 +15,8 @@ import { Footer } from "./components/generals/Footer";
 
 function App() {
   const [token, setToken] = useState(!!localStorage.getItem("accesToken"));
-  const baseAPI = "https://superheroapi.com/api/10225351462708768";
+  const accesTokenApi = "10225351462708768";
+  const baseAPI = `https://superheroapi.com/api.php/${accesTokenApi}/`;
   const [error, setError] = useState("");
 
   const [listHeroes, setListHeroes] = useState(

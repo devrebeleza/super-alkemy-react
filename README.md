@@ -1,14 +1,14 @@
 # Equipo de Superheroes :dart: :rocket::rocket:
 
 _Aplicación que permite crear un equipo de superhéroes consumiendo información de una [API](https://superheroapi.com/) externa y muestra diferentes atributos a nivel individual de cada miembro y del equipo consolidado.
-Dicha Aplicación cuenta con un Formulario de Login mediante una petición POST a una [URL](http://challenge-react.alkemy.org/), la cual devuelve un token de aceptación de o rechazo_
+Dicha Aplicación cuenta con un Formulario de Login mediante una petición POST a una [URL](http://challenge-react.alkemy.org/), la cual devuelve un token de aceptación de o rechazo. Utiliza \_LocalStorage_ del navegador para persistir los heroes seleccionados como favoritos.\_
 
 Este proyecto fue creado con [Create React App](https://github.com/facebook/create-react-app).
 
 ### Pre-requisitos 📋
 
 - [NodeJS](https://nodejs.org/es/)
-- CORS Habilitación [CORS Chrome Extension](https://chrome.google.com/webstore/detail/allow-cors-access-control/lhobafahddgcelffkeicbaginigeejlf?hl=es)
+- CORS Habilitación [CORS Chrome Extension](https://chrome.google.com/webstore/detail/allow-cors-access-control/lhobafahddgcelffkeicbaginigeejlf?hl=es) (_ya no es necesario_)
 
 ## Scripts Disponibles :wrench:
 
@@ -53,6 +53,8 @@ _Desplegado en Vercel_
 - [WEB](https://super-alkemy-react.vercel.app/)
 
 > _Con errores de CORS a resolver_
+>
+> > _Resuelto_
 
 ## Próximos pasos :open_hands:
 

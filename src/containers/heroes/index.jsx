@@ -53,9 +53,13 @@ export const HeroesContainer = ({
   };
 
   useEffect(() => {
-    let urlSearchAPI = `${baseAPI}/search/${searchTerm}`;
-    setSpinner(true);
-    searchData(urlSearchAPI);
+    if (searchTerm) {
+      let urlSearchAPI = `${baseAPI}/search/${searchTerm}`;
+      setSpinner(true);
+      searchData(urlSearchAPI);
+    } else {
+      setData([]);
+    }
   }, [searchTerm]);
 
   return (
@@ -70,7 +74,6 @@ export const HeroesContainer = ({
                 className="input"
                 name="txt"
                 onInput={handleSearchByName}
-                /* onMouseOut="document.search.txt.value = ''" */
               />
             </form>
             <i className="i-search fas fa-search"></i>

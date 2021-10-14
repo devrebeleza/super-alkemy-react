@@ -21,8 +21,11 @@ export const Login = ({ LoginForm }) => {
         history.push("/");
       })
       .catch(function (error) {
-        console.log(error);
-        setError(error);
+        if (email === "test@email.org" && password === "acces") {
+          LoginForm("eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9");
+        } else {
+          setError(error);
+        }
       });
   };
 
@@ -49,7 +52,7 @@ export const Login = ({ LoginForm }) => {
                     type="email"
                     id="typeEmailX"
                     className="form-control form-control-lg"
-                    placeholder="Email"
+                    placeholder="Email (test@email.org)"
                     onChange={(e) => setEmail(e.target.value)}
                   />
                 </div>
@@ -59,7 +62,7 @@ export const Login = ({ LoginForm }) => {
                     type="password"
                     id="typePasswordX"
                     className="form-control form-control-lg"
-                    placeholder="Password"
+                    placeholder="Password (acces)"
                     onChange={(e) => setPassword(e.target.value)}
                   />
                 </div>
