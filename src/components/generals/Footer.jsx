@@ -8,7 +8,7 @@ export const Footer = () => {
           <div className="row d-flex align-items-end">
             <div className="col  text-right text-md-end">
               <div className="p-1">
-                © 2020 Copyright:{" "}
+                © 2021 Copyright:{" "}
                 <a
                   className="text-white"
                   href="https://github.com/devrebeleza"
